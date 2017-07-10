@@ -1,2 +1,3 @@
-## Welcome to LAD Pages
-Taeho Hwang's Portfolio page
+## 생일축하 html5
+> 친구 생일축하할라고 포크해온 프로젝트입니다.
+> html5가 지원되어야 합니다.
