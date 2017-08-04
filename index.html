@@ -1,219 +1,52 @@
-<!DOCTYPE HTML>
-<!--
-	Prologue by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+﻿<!DOCTYPE html>
 <html>
-	<head>
-		<title>Taeho's Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-	</head>
-	<body>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>Birthday Countdown / Coming Soon Page</title>
 
-		<!-- Header -->
-			<div id="header">
+<!--CSS-->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/bootstrap-light.css">
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+<!--/CSS-->
 
-				<div class="top">
+<!--JS-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/jquery.plugin.js"></script>
+<script src="js/jquery.countdown.js"></script>
+<script>
+$(function () {
+	$('#defaultCountdown').countdown({until: new Date(2017, 8-1, 6)}); 
+	//Replace above date with your own, to find out more visit http://keith-wood.name/countdown.html
+});
+</script>
+<!--/JS-->
 
-					<!-- Logo -->
-						<div id="logo">
-							<span class="image avatar48"><img src="images/fit hth.jpg" alt="" /></span>
-							<h1 id="title">Taeho HWANG</h1>
-							<p>Infomation Security Major</p>
-						</div>
+</head>
 
-					<!-- Nav -->
-						<nav id="nav">
-							<!--
+<body>
 
-								Prologue's nav expects links in one of two formats:
+<!--DARK OVERLAY-->
+<div class="overlay"></div>
+<!--/DARK OVERLAY-->
 
-								1. Hash link (scrolls to a different section within the page)
+<!--WRAP-->
+<div id="wrap">
+	<!--CONTAINER-->
+	<div class="container">
+		<img src="images/paperplane.png" alt="Paper Plane" class="image-align" />
+		<h1>
+			<span></span><br/>
+			<span class="yellow">남은시간</span>
+		</h1>
+		<p>아직은 시간이 되지 않았네!</p>
+		<div id="defaultCountdown"></div>
+		
+		<p class="copyright">Produly designed by <a href="https://herowp.com" target="_blank">HeroWP.com</a></p>
+	</div>
+	<!--/CONTAINER-->
+</div>
+<!--/WRAP-->
 
-								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
-
-								2. Standard link (sends the user to another page/site)
-
-								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
-
-							-->
-							<ul>
-								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
-								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
-								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
-							</ul>
-						</nav>
-
-				</div>
-
-				<div class="bottom">
-
-					<!-- Social Icons -->
-						<ul class="icons">
-							<ul class="icons">
-								<li><a href="https://www.facebook.com/profile.php?id=100003943026225" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-								<li><a href="https://github.com/hth225" class="icon fa-github"><span class="label">Github</span></a></li>
-								<li><a href="https://www.linkedin.com/in/hwang-taeho-172161136/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-							</ul>
-						</ul>
-
-				</div>
-
-			</div>
-
-		<!-- Main -->
-			<div id="main">
-
-				<!-- Intro -->
-					<section id="top" class="one dark cover">
-						<div class="container">
-
-							<header>
-								<h2 class="alt">Hi! I'm <strong>Hwang Taeho</strong>, and this is my <strong>Portfolio</strong> </h2>
-								<p><br />
-								Projects and introduce myself</p>
-							</header>
-
-							<footer>
-								<a href="#portfolio" class="button scrolly">Project</a>
-							</footer>
-
-						</div>
-					</section>
-
-				<!-- Portfolio -->
-					<section id="portfolio" class="two">
-						<div class="container">
-
-							<header>
-								<h2>Projects</h2>
-							</header>
-
-							<p>Projects what i've done</p>
-
-							<div class="row">
-								<div class="4u 12u$(mobile)">
-									<article class="item">
-										<a href="https://www.slideshare.net/Hwangtaeho/pykeylogger" class="image fit"><img src="images/pykeylogger-1-638.jpg" alt="" /></a>
-										<header>
-											<h3>PyKeyLogger Project Slide, Demo Video</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="https://github.com/hth225/pykeylogger" class="image fit"><img src="images/github.PNG" alt="" /></a>
-										<header>
-											<h3>PyKeyLogger Project Github</h3>
-										</header>
-									</article>
-								</div>
-								<div class="4u 12u$(mobile)">
-									<article class="item">
-										<a href="https://github.com/hth225/Ghost_identity" class="image fit"><img src="images/Ghost_iden.PNG" alt="" /></a>
-										<header>
-											<h3>Ghost Identity Project</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="https://github.com/hth225/python_scripts" class="image fit"><img src="images/python.PNG" alt="" /></a>
-										<header>
-											<h3>Python Hacking Tools(In progress)</h3>
-										</header>
-									</article>
-								</div>
-								<div class="4u$ 12u$(mobile)">
-									<article class="item">
-										<a href="https://github.com/hth225/HashEncodeProject" class="image fit"><img src="images/HashEncode.PNG" alt="" /></a>
-										<header>
-											<h3>File Encode Project</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="https://github.com/hth225/sangyeops_network_pill" class="image fit"><img src="images/network.PNG" alt="" /></a>
-										<header>
-											<h3>DDOS Study(In progress)</h3>
-										</header>
-									</article>
-								</div>
-								<div class="4u 12u$(mobile)">
-									<article class="item">
-										<a href="https://github.com/hth225/WebServer_vulnerable_point_report" class="image fit"><img src="images/vulnerable_point.PNG" alt="" /></a>
-										<header>
-											<h3>Web Server vulnerable point reports</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="https://github.com/hth225/pykeylogger" class="image fit"><img src="images/github.PNG" alt="" /></a>
-										<header>
-											<h3>PyKeyLogger Project Github</h3>
-										</header>
-									</article>
-								</div>
-							</div>
-
-						</div>
-					</section>
-
-				<!-- About Me -->
-					<section id="about" class="three">
-						<div class="container">
-
-							<header>
-								<h2>About Me</h2>
-							</header>
-
-							<a href="#" class="image featured"><img src="images/portfolio.png" alt="" /></a>
-
-							<p>I'm Hwang Taeho and Information Security Major (3th grade) of Daedeok Software Meister High School.
-							I always effort to be the person who is passionate, not afraid to challenge and Full of inquisitiveness. Thesedays, I intersted in applicaion develop and network.</p>
-
-						</div>
-					</section>
-
-				<!-- Contact -->
-					<section id="contact" class="four">
-						<div class="container">
-
-							<header>
-								<h2>Contact</h2>
-							</header>
-							<p>
-							<ul class="icons">
-								<li><a href="https://www.facebook.com/profile.php?id=100003943026225" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-								<li><a href="https://github.com/hth225" class="icon fa-github"><span class="label">Github</span></a></li>
-								<li><a href="https://www.linkedin.com/in/hwang-taeho-172161136/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-							</ul>
-							</p>
-
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-			<div id="footer">
-
-				<!-- Copyright -->
-					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollzer.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-
-	</body>
+</body>
 </html>
